@@ -7,6 +7,111 @@
     "text": "Blogging what I’ve learned about ML, DL, etc."
   },
   {
+    "objectID": "posts/2023-10-05-receipt-project/index.html",
+    "href": "posts/2023-10-05-receipt-project/index.html",
+    "title": "Receipt Project",
+    "section": "",
+    "text": "https://github.com/clovaai/cord (data + source code): thousands of Indonesian receipts\nhttps://expressexpense.com/blog/free-receipt-images-ocr-machine-learning-dataset/: free 100, no-free 40K"
+  },
+  {
+    "objectID": "posts/2023-10-05-receipt-project/index.html#dataset",
+    "href": "posts/2023-10-05-receipt-project/index.html#dataset",
+    "title": "Receipt Project",
+    "section": "",
+    "text": "https://github.com/clovaai/cord (data + source code): thousands of Indonesian receipts\nhttps://expressexpense.com/blog/free-receipt-images-ocr-machine-learning-dataset/: free 100, no-free 40K"
+  },
+  {
+    "objectID": "posts/2023-10-05-receipt-project/index.html#paper",
+    "href": "posts/2023-10-05-receipt-project/index.html#paper",
+    "title": "Receipt Project",
+    "section": "Paper",
+    "text": "Paper\n\nhttps://hal.science/hal-01654191/document: Deep Learning for automatic sale receipt understanding"
+  },
+  {
+    "objectID": "posts/2023-10-06-setup-env/index.html",
+    "href": "posts/2023-10-06-setup-env/index.html",
+    "title": "Setup ENV",
+    "section": "",
+    "text": "A guidline for myself to setup env for ML\nNote: NEVER use python of system =&gt; use CONDA or MAMBA to manage python version\n\n\n\nCurrently, Mamba is faster than Miniconda, I follow the instruction here to install: https://github.com/conda-forge/miniforge#mambaforge\n\n# MACOS \n(base) 192 :: ~ » curl -L -O \"https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh\" bash Miniforge3-$(uname)-$(uname -m).sh\n(base) 192 :: ~ » which python3                                                                                                                                                                         1 ↵\n/Users/hatruong/miniforge3/bin/python3\n(base) 192 :: ~ » python3 --version\nPython 3.10.12\n\n(base) 192 :: ~ » alias python=python3\n(base) 192 :: ~ » which python\npython: aliased to python3\n\nI use python3.10 because this is version that Google Colab using\ncreate virtual env\n\n\n\n\n\ninstall fastai using mamba\nmamba install -Uqq fastai\n\n\n\n\n\ninstall: https://quarto.org/docs/get-started/\nfailed to preview + render with vscode so I try with terminal and it works!\nit automatically update when I change file"
+  },
+  {
+    "objectID": "posts/2023-10-06-setup-env/index.html#mamba-manage-python-package",
+    "href": "posts/2023-10-06-setup-env/index.html#mamba-manage-python-package",
+    "title": "Setup ENV",
+    "section": "",
+    "text": "Currently, Mamba is faster than Miniconda, I follow the instruction here to install: https://github.com/conda-forge/miniforge#mambaforge\n\n# MACOS \n(base) 192 :: ~ » curl -L -O \"https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh\" bash Miniforge3-$(uname)-$(uname -m).sh\n(base) 192 :: ~ » which python3                                                                                                                                                                         1 ↵\n/Users/hatruong/miniforge3/bin/python3\n(base) 192 :: ~ » python3 --version\nPython 3.10.12\n\n(base) 192 :: ~ » alias python=python3\n(base) 192 :: ~ » which python\npython: aliased to python3\n\nI use python3.10 because this is version that Google Colab using\ncreate virtual env"
+  },
+  {
+    "objectID": "posts/2023-10-06-setup-env/index.html#fastai",
+    "href": "posts/2023-10-06-setup-env/index.html#fastai",
+    "title": "Setup ENV",
+    "section": "",
+    "text": "install fastai using mamba\nmamba install -Uqq fastai"
+  },
+  {
+    "objectID": "posts/2023-10-06-setup-env/index.html#quarto-blogging",
+    "href": "posts/2023-10-06-setup-env/index.html#quarto-blogging",
+    "title": "Setup ENV",
+    "section": "",
+    "text": "install: https://quarto.org/docs/get-started/\nfailed to preview + render with vscode so I try with terminal and it works!\nit automatically update when I change file"
+  },
+  {
+    "objectID": "posts/2023-10-03-fastai-notes/index.html",
+    "href": "posts/2023-10-03-fastai-notes/index.html",
+    "title": "Note of Fast.ai Course",
+    "section": "",
+    "text": "Draft Note of Fast.ai Course\n[TODO] - review clip of chapter 2 =&gt; setup env (fastai, gradio, nbextention, mamba or conda)"
+  },
+  {
+    "objectID": "posts/2023-10-03-fastai-notes/index.html#intro-note",
+    "href": "posts/2023-10-03-fastai-notes/index.html#intro-note",
+    "title": "Note of Fast.ai Course",
+    "section": "Intro Note",
+    "text": "Intro Note"
+  },
+  {
+    "objectID": "posts/2023-10-03-fastai-notes/index.html#production",
+    "href": "posts/2023-10-03-fastai-notes/index.html#production",
+    "title": "Note of Fast.ai Course",
+    "section": "Production",
+    "text": "Production\n\nThinking about objective first!\n\nYou should do not think about the state-of-the-art models for your problem. The first thing we should do is talking with the end-user/ stakeholder in order to understand deeply their truely demand, their concerns and what they will do with the result of model (action). After that, I will go with the technical design for the end-to-end system and AI model is just a small piece in the big picture.\n\nshould intergrate from end-to-end project =&gt; avoid spending too much time to cleaning data, tuning model, polishing GUI, etc. at the first time\nstarting with our objective rather than which is the best model, which is called “Drivetrain Approach” [Book] Designing great data products https://www.oreilly.com/radar/drivetrain-approach-data-products/\n\n\n\nExperience working with Recommendation\n\nconduct many experiemnts before apply any recommendation methods (such as most popular, random or a hand-craft rec)\n\n\n\n\nExperience working with end-user\n\nDifferent perspective\nAfter a ton of meetings, we should finalize:\n\nhow the biz evaluate model\nhow good model is which we can make it on production\nthe roll-out plan\nthe action(s) that biz will do with t\n\nDo as much Retro as possible after each quarter/ itergration to reduce conflicts\n\n\n\nCoding\n\nDataLoaders\nData Augumentation: create a random variations of input data\n\n\n\nProductionize\nWe need to prepare a lot of stuff which will protect ourselves from disaster after productionize:\n\ndark-launch model to check how model work in real life\nprepare report to monitor the result as well as the abnormal\ncreate an alert if possible when something is especially high\nor use a mechanism to stop model in necessary.\ngradually roll-out"
+  },
+  {
+    "objectID": "posts/2023-10-03-fastai-notes/index.html#ethic",
+    "href": "posts/2023-10-03-fastai-notes/index.html#ethic",
+    "title": "Note of Fast.ai Course",
+    "section": "Ethic",
+    "text": "Ethic\n\n“It is encouraging to see a company not just unthinkingly optimize a metric, but consider its impact.”"
+  },
+  {
+    "objectID": "posts/2023-10-04-building-machine-learning-powered-applications/index.html",
+    "href": "posts/2023-10-04-building-machine-learning-powered-applications/index.html",
+    "title": "Building machine learning powered applications",
+    "section": "",
+    "text": "My note when reading the book “Building Machine Learning Powered Applications Emmanuel Ameisen”"
+  },
+  {
+    "objectID": "posts/2023-10-04-building-machine-learning-powered-applications/index.html#resource",
+    "href": "posts/2023-10-04-building-machine-learning-powered-applications/index.html#resource",
+    "title": "Building machine learning powered applications",
+    "section": "Resource:",
+    "text": "Resource:\n\nsource code of book: https://github.com/hundredblocks/ml-powered-applications"
+  },
+  {
+    "objectID": "posts/2023-10-04-building-machine-learning-powered-applications/index.html#chapter-1.-from-product-goal-to-ml-framing",
+    "href": "posts/2023-10-04-building-machine-learning-powered-applications/index.html#chapter-1.-from-product-goal-to-ml-framing",
+    "title": "Building machine learning powered applications",
+    "section": "Chapter 1. From Product Goal to ML Framing",
+    "text": "Chapter 1. From Product Goal to ML Framing\n“build systems for which we are unable to define a heuristic solution.”\n“a manageable set of deterministic rules”\n\nEstimate what is possible\nFollowing the two successive steps: - (1) framing product goal in an ML paradigm - (2) evaluate ML feasibility =&gt; start with one that we judge as the simplest\nCategorize ML problems into 4 types: - (1) classification and regression - (2) knowledge extraction: extract topic from text (NLP), object detection (image) - (3) catalog organizaation: recommendation using collaborative or content-based (such as what people also watched/buyed/ etc.) - (4) generative models: generate data & depend on user input such as translation, subtitle generation, summarize\nData Data availability: labeled, weakly labeled, unlabeled\n\n\nFraming ML Editor\n\n\ndesign end-to-end framework\n\n\napply heuristic approach =&gt; the simplest approach =&gt; complex model\n\n\n\n\n\nNote from “Monica Rogati interview”: spend time (hours) to review data, result of models to check if there is something weird in it"
+  },
+  {
+    "objectID": "posts/2023-10-04-building-machine-learning-powered-applications/index.html#chapter-2",
+    "href": "posts/2023-10-04-building-machine-learning-powered-applications/index.html#chapter-2",
+    "title": "Building machine learning powered applications",
+    "section": "Chapter 2",
+    "text": "Chapter 2\nIt’s time to choose success metric and planing model iterations\n\nMetric\n“““a misalignment between product metrics and model metrics.”“”\nThere are 4 metrics to consider - (1) biz metric: represent the goal of project - (2) model metric: evaluate when it has not deployed yet =&gt; offline metric: AUC, precision, recall, - (3) freshness and distribution shift: distribution of data shift =&gt; update model =&gt; decide how often we need to retrain model - (4) speed: depend on usecase\n\n\nEstimate scope & challenge\n\nLearn from domain expertise: see how they do tasks manually =&gt; find usefull features; avoid the pitfall; avoid reinventing the wheel\nLook at the data before starting modeling: EDA =&gt; give an intuition\nFind a similar, existing solution(s)\n\nOpen Data: some resources to find the similar dataset\n\nInternet archive: https://archive.org/details/datasets\nsubreddit: http://reddit.com/r/datasets\nKaggle\nUCI\nhttps://datasetsearch.research.google.com/\nCommon Crawl: https://commoncrawl.org/\nWiki: https://en.wikipedia.org/wiki/List_of_datasets_for_machine-learning_research\n\nOpen Source Code:\n\n\n\n\nML Editor Planning"
+  },
+  {
     "objectID": "posts/welcome/index.html",
     "href": "posts/welcome/index.html",
     "title": "Welcome To My Blog",
@@ -18,6 +123,6 @@
     "href": "index.html",
     "title": "Hannah Blog",
     "section": "",
-    "text": "Welcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nOct 6, 2023\n\n\nHa Truong\n\n\n\n\n\n\nNo matching items"
+    "text": "Setup ENV\n\n\n\n\n\n\n\ncode\n\n\n\n\n\n\n\n\n\n\n\nOct 6, 2023\n\n\nHa Truong\n\n\n\n\n\n\n  \n\n\n\n\nReceipt Project\n\n\n\n\n\n\n\nproject\n\n\n\n\n\n\n\n\n\n\n\nOct 5, 2023\n\n\nHa Truong\n\n\n\n\n\n\n  \n\n\n\n\nBuilding machine learning powered applications\n\n\n\n\n\n\n\nbook\n\n\n\n\n\n\n\n\n\n\n\nOct 4, 2023\n\n\nHa Truong\n\n\n\n\n\n\n  \n\n\n\n\nNote of Fast.ai Course\n\n\n\n\n\n\n\ncode\n\n\n\n\n\n\n\n\n\n\n\nOct 3, 2023\n\n\nHa Truong\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nOct 1, 2023\n\n\nHa Truong\n\n\n\n\n\n\nNo matching items"
   }
 ]

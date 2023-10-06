@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Ha Truong">
-<meta name="dcterms.date" content="2023-10-01">
+<meta name="dcterms.date" content="2023-10-04">
 
-<title>Hannah Blog - Welcome To My Blog</title>
+<title>Hannah Blog - Building machine learning powered applications</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -103,9 +103,9 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Welcome To My Blog</h1>
+      <h1 class="title">Building machine learning powered applications</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">news</div>
+                <div class="quarto-category">book</div>
               </div>
                   </div>
   </div>
@@ -123,7 +123,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">October 1, 2023</p>
+        <p class="date">October 4, 2023</p>
       </div>
     </div>
     
@@ -141,10 +141,74 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>Blogging what I’ve learned about ML, DL, etc. Welcome!</p>
-<p><img src="thumbnail.jpg" class="img-fluid"></p>
+<p>My note when reading the book “Building Machine Learning Powered Applications Emmanuel Ameisen”</p>
+<section id="resource" class="level2">
+<h2 class="anchored" data-anchor-id="resource">Resource:</h2>
+<ul>
+<li>source code of book: https://github.com/hundredblocks/ml-powered-applications</li>
+</ul>
+</section>
+<section id="chapter-1.-from-product-goal-to-ml-framing" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-1.-from-product-goal-to-ml-framing">Chapter 1. From Product Goal to ML Framing</h2>
+<p>“build systems for which we are unable to define a <strong>heuristic</strong> solution.”</p>
+<p>“a manageable set of deterministic rules”</p>
+<section id="estimate-what-is-possible" class="level3">
+<h3 class="anchored" data-anchor-id="estimate-what-is-possible">Estimate what is possible</h3>
+<p>Following the two successive steps: - (1) framing product goal in an ML paradigm - (2) evaluate ML feasibility =&gt; start with one that we judge as the simplest</p>
+<p>Categorize ML problems into 4 types: - (1) classification and regression - (2) knowledge extraction: extract topic from text (NLP), object detection (image) - (3) catalog organizaation: recommendation using collaborative or content-based (such as what people also watched/buyed/ etc.) - (4) generative models: generate data &amp; depend on user input such as translation, subtitle generation, summarize</p>
+<p>Data Data availability: labeled, weakly labeled, unlabeled</p>
+</section>
+<section id="framing-ml-editor" class="level3">
+<h3 class="anchored" data-anchor-id="framing-ml-editor">Framing ML Editor</h3>
+<ul>
+<li><ol type="1">
+<li>design end-to-end framework</li>
+</ol></li>
+<li><ol start="2" type="1">
+<li>apply heuristic approach =&gt; the simplest approach =&gt; complex model</li>
+</ol></li>
+<li><ol start="3" type="1">
+<li></li>
+</ol></li>
+</ul>
+<p>Note from “Monica Rogati interview”: spend time (hours) to review data, result of models to check if there is something weird in it</p>
+</section>
+</section>
+<section id="chapter-2" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-2">Chapter 2</h2>
+<p>It’s time to choose success metric and planing model iterations</p>
+<section id="metric" class="level3">
+<h3 class="anchored" data-anchor-id="metric">Metric</h3>
+<p>“““a misalignment between product metrics and model metrics.”“”</p>
+<p>There are 4 metrics to consider - (1) biz metric: represent the goal of project - (2) model metric: evaluate when it has not deployed yet =&gt; offline metric: AUC, precision, recall, - (3) freshness and distribution shift: distribution of data shift =&gt; update model =&gt; decide how often we need to retrain model - (4) speed: depend on usecase</p>
+</section>
+<section id="estimate-scope-challenge" class="level3">
+<h3 class="anchored" data-anchor-id="estimate-scope-challenge">Estimate scope &amp; challenge</h3>
+<ul>
+<li>Learn from domain expertise: see how they do tasks manually =&gt; find usefull features; avoid the pitfall; avoid reinventing the wheel</li>
+<li>Look at the data before starting modeling: EDA =&gt; give an intuition</li>
+<li>Find a similar, existing solution(s)
+<ul>
+<li>Open Data: some resources to find the similar dataset
+<ul>
+<li>Internet archive: https://archive.org/details/datasets</li>
+<li>subreddit: http://reddit.com/r/datasets</li>
+<li><a href="https://www.kaggle.com/datasets">Kaggle</a></li>
+<li><a href="https://archive.ics.uci.edu/datasets">UCI</a></li>
+<li>https://datasetsearch.research.google.com/</li>
+<li>Common Crawl: https://commoncrawl.org/</li>
+<li>Wiki: https://en.wikipedia.org/wiki/List_of_datasets_for_machine-learning_research</li>
+</ul></li>
+<li>Open Source Code:</li>
+</ul></li>
+</ul>
+</section>
+<section id="ml-editor-planning" class="level3">
+<h3 class="anchored" data-anchor-id="ml-editor-planning">ML Editor Planning</h3>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

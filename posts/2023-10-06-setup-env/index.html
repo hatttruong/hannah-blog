@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Ha Truong">
-<meta name="dcterms.date" content="2023-10-01">
+<meta name="dcterms.date" content="2023-10-06">
 
-<title>Hannah Blog - Welcome To My Blog</title>
+<title>Hannah Blog - Setup ENV</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -103,9 +103,9 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Welcome To My Blog</h1>
+      <h1 class="title">Setup ENV</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">news</div>
+                <div class="quarto-category">code</div>
               </div>
                   </div>
   </div>
@@ -123,10 +123,16 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">October 1, 2023</p>
+        <p class="date">October 6, 2023</p>
       </div>
     </div>
     
+      <div>
+      <div class="quarto-title-meta-heading">Modified</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date-modified">October 6, 2023</p>
+      </div>
+    </div>
       
     </div>
     
@@ -141,10 +147,48 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>Blogging what I’ve learned about ML, DL, etc. Welcome!</p>
-<p><img src="thumbnail.jpg" class="img-fluid"></p>
+<section id="setup-env" class="level1">
+<h1>Setup ENV</h1>
+<p>A guidline for myself to setup env for ML</p>
+<p><strong>Note: NEVER use python of system =&gt; use CONDA or MAMBA to manage python version</strong></p>
+<section id="mamba-manage-python-package" class="level2">
+<h2 class="anchored" data-anchor-id="mamba-manage-python-package">Mamba: manage python package</h2>
+<ul>
+<li><p>Currently, Mamba is faster than Miniconda, I follow the instruction here to install: https://github.com/conda-forge/miniforge#mambaforge</p>
+<pre><code>
+# MACOS 
+(base) 192 :: ~ » curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh" bash Miniforge3-$(uname)-$(uname -m).sh
+(base) 192 :: ~ » which python3                                                                                                                                                                         1 ↵
+/Users/hatruong/miniforge3/bin/python3
+(base) 192 :: ~ » python3 --version
+Python 3.10.12
+
+(base) 192 :: ~ » alias python=python3
+(base) 192 :: ~ » which python
+python: aliased to python3
+</code></pre></li>
+<li><p>I use python3.10 because this is version that Google Colab using</p></li>
+<li><p>create virtual env</p></li>
+</ul>
+</section>
+<section id="fastai" class="level2">
+<h2 class="anchored" data-anchor-id="fastai">Fastai</h2>
+<ul>
+<li><p>install fastai using mamba</p>
+<pre><code>mamba install -Uqq fastai</code></pre></li>
+</ul>
+</section>
+<section id="quarto-blogging" class="level2">
+<h2 class="anchored" data-anchor-id="quarto-blogging">Quarto: blogging</h2>
+<ul>
+<li>install: https://quarto.org/docs/get-started/</li>
+<li>failed to preview + render with vscode so I try with terminal and it works!</li>
+<li>it automatically update when I change file</li>
+</ul>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

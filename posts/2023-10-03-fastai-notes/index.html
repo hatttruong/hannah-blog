@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Ha Truong">
-<meta name="dcterms.date" content="2023-10-01">
+<meta name="dcterms.date" content="2023-10-03">
 
-<title>Hannah Blog - Welcome To My Blog</title>
+<title>Hannah Blog - Note of Fast.ai Course</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -103,9 +103,9 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Welcome To My Blog</h1>
+      <h1 class="title">Note of Fast.ai Course</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">news</div>
+                <div class="quarto-category">code</div>
               </div>
                   </div>
   </div>
@@ -123,10 +123,16 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">October 1, 2023</p>
+        <p class="date">October 3, 2023</p>
       </div>
     </div>
     
+      <div>
+      <div class="quarto-title-meta-heading">Modified</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date-modified">October 5, 2023</p>
+      </div>
+    </div>
       
     </div>
     
@@ -141,10 +147,73 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>Blogging what I’ve learned about ML, DL, etc. Welcome!</p>
-<p><img src="thumbnail.jpg" class="img-fluid"></p>
+<p>Draft Note of Fast.ai Course</p>
+<p>[TODO] - review clip of chapter 2 =&gt; setup env (fastai, gradio, nbextention, mamba or conda)</p>
+<section id="intro-note" class="level2">
+<h2 class="anchored" data-anchor-id="intro-note">Intro Note</h2>
+</section>
+<section id="production" class="level2">
+<h2 class="anchored" data-anchor-id="production">Production</h2>
+<section id="thinking-about-objective-first" class="level3">
+<h3 class="anchored" data-anchor-id="thinking-about-objective-first">Thinking about objective first!</h3>
+<ul>
+<li>You should do not think about the state-of-the-art models for your problem. The first thing we should do is talking with the end-user/ stakeholder in order to understand deeply their truely demand, their concerns and what they will do with the result of model (action). After that, I will go with the technical design for the end-to-end system and AI model is just a small piece in the big picture.</li>
+<li></li>
+<li>should intergrate from end-to-end project =&gt; avoid spending too much time to cleaning data, tuning model, polishing GUI, etc. at the first time</li>
+<li>starting with our objective rather than which is the best model, which is called “Drivetrain Approach” [Book] Designing great data products https://www.oreilly.com/radar/drivetrain-approach-data-products/</li>
+</ul>
+</section>
+<section id="experience-working-with-recommendation" class="level3">
+<h3 class="anchored" data-anchor-id="experience-working-with-recommendation">Experience working with Recommendation</h3>
+<ul>
+<li>conduct many experiemnts before apply any recommendation methods (such as most popular, random or a hand-craft rec)</li>
+<li></li>
+</ul>
+</section>
+<section id="experience-working-with-end-user" class="level3">
+<h3 class="anchored" data-anchor-id="experience-working-with-end-user">Experience working with end-user</h3>
+<ul>
+<li>Different perspective</li>
+<li>After a ton of meetings, we should finalize:
+<ul>
+<li>how the biz evaluate model</li>
+<li>how good model is which we can make it on production</li>
+<li>the roll-out plan</li>
+<li>the action(s) that biz will do with t</li>
+</ul></li>
+<li>Do as much Retro as possible after each quarter/ itergration to reduce conflicts</li>
+</ul>
+</section>
+<section id="coding" class="level3">
+<h3 class="anchored" data-anchor-id="coding">Coding</h3>
+<ul>
+<li>DataLoaders</li>
+<li>Data Augumentation: create a random variations of input data</li>
+</ul>
+</section>
+<section id="productionize" class="level3">
+<h3 class="anchored" data-anchor-id="productionize">Productionize</h3>
+<p>We need to prepare a lot of stuff which will protect ourselves from disaster after productionize:</p>
+<ul>
+<li>dark-launch model to check how model work in real life</li>
+<li>prepare report to monitor the result as well as the abnormal</li>
+<li>create an alert if possible when something is especially high</li>
+<li>or use a mechanism to stop model in necessary.</li>
+<li>gradually roll-out</li>
+</ul>
+</section>
+</section>
+<section id="ethic" class="level2">
+<h2 class="anchored" data-anchor-id="ethic">Ethic</h2>
+<ul>
+<li>“It is encouraging to see a company not just unthinkingly optimize a metric, but consider its impact.”</li>
+</ul>
+</section>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section"></h2>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
