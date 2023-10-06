@@ -1,19 +1,19 @@
 ---
 title: "About"
-image: profile.jpg
+image: profile.jpeg
 about:
   template: jolla
   links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com
+    # - icon: twitter
+    #   text: Twitter
+    #   href: https://twitter.com
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com
+      href: https://www.linkedin.com/in/truongthithuha/
     - icon: github
       text: Github
-      href: https://github.com
+      href: https://github.com/hatttruong
 
 ---
 
-About this blog
+Blogging what I've learned about ML, DL, etc.
