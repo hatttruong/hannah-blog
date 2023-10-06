@@ -28,7 +28,6 @@ A guidline for myself to setup env for ML
   
   ```
 - I use python3.10 because this is version that Google Colab using
-- create virtual env
 
 
 ## Fastai
@@ -43,3 +42,22 @@ A guidline for myself to setup env for ML
 - install: https://quarto.org/docs/get-started/
 - failed to preview + render with vscode so I try with terminal and it works!
 - it automatically update when I change file
+
+## Jupyter notebook
+
+- it is automatically installed by mamba but there is an incompatible between jupyter notebook and extension (at day of 2023.10.06, version of notebook is 7.x.x which is not work with extension => we need to downgrade)
+  ```
+  pip install --upgrade notebook==6.4.12
+  // reinstall traitlets
+  pip uninstall traitlets
+  pip install traitlets==5.9.0
+  ```
+- install **jupyter_contrib_nbextensions**
+  ```
+  pip install jupyter_contrib_nbextensions
+  jupyter contrib nbextension install --user
+  
+  ```
+- 
+
+
