@@ -1,0 +1,45 @@
+---
+title: "Setup ENV"
+author: "Ha Truong"
+date: "2023-10-06"
+date-modified: "2023-10-06"
+categories: [code]
+---
+
+# Setup ENV
+A guidline for myself to setup env for ML
+
+**Note: NEVER use python of system => use CONDA or MAMBA to manage python version**
+
+## Mamba: manage python package
+- Currently, Mamba is faster than Miniconda, I follow the instruction here to install: https://github.com/conda-forge/miniforge#mambaforge
+  ```
+  
+  # MACOS 
+  (base) 192 :: ~ » curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh" bash Miniforge3-$(uname)-$(uname -m).sh
+  (base) 192 :: ~ » which python3                                                                                                                                                                         1 ↵
+  /Users/hatruong/miniforge3/bin/python3
+  (base) 192 :: ~ » python3 --version
+  Python 3.10.12
+
+  (base) 192 :: ~ » alias python=python3
+  (base) 192 :: ~ » which python
+  python: aliased to python3
+  
+  ```
+- I use python3.10 because this is version that Google Colab using
+- create virtual env
+
+
+## Fastai
+
+- install fastai using mamba
+  ```
+  mamba install -Uqq fastai
+  ```
+
+## Quarto: blogging
+
+- install: https://quarto.org/docs/get-started/
+- failed to preview + render with vscode so I try with terminal and it works!
+- it automatically update when I change file

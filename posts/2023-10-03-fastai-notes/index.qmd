@@ -1,0 +1,59 @@
+---
+title: "Note of Fast.ai Course"
+author: "Ha Truong"
+date: "2023-10-03"
+date-modified: "2023-10-05"
+categories: [code]
+---
+
+
+Draft Note of Fast.ai Course
+
+
+
+[TODO]
+- review clip of chapter 2 => setup env (fastai, gradio, nbextention, mamba or conda)
+
+## Intro Note
+
+## Production
+
+### Thinking about objective first!
+
+- You should do not think about the state-of-the-art models for your problem. The first thing we should do is talking with the end-user/ stakeholder in order to understand deeply their truely demand, their concerns and what they will do with the result of model (action). After that, I will go with the technical design for the end-to-end system and AI model is just a small piece in the big picture.
+- 
+- should intergrate from end-to-end project => avoid spending too much time to cleaning data, tuning model, polishing GUI, etc. at the first time
+- starting with our objective rather than which is the best model, which is called "Drivetrain Approach" [Book] Designing great data products https://www.oreilly.com/radar/drivetrain-approach-data-products/
+
+### Experience working with Recommendation
+- conduct many experiemnts before apply any recommendation methods (such as most popular, random or a hand-craft rec)
+- 
+
+### Experience working with end-user
+- Different perspective
+- After a ton of meetings, we should finalize:
+  - how the biz evaluate model
+  - how good model is which we can make it on production
+  - the roll-out plan
+  - the action(s) that biz will do with t
+- Do as much Retro as possible after each quarter/ itergration to reduce conflicts
+
+### Coding
+- DataLoaders
+- Data Augumentation: create a random variations of input data
+
+### Productionize
+
+We need to prepare a lot of stuff which will protect ourselves from disaster after productionize:
+
+  - dark-launch model to check how model work in real life
+  - prepare report to monitor the result as well as the abnormal
+  - create an alert if possible when something is especially high
+  - or use a mechanism to stop model in necessary.
+  - gradually roll-out
+
+
+## Ethic
+- "It is encouraging to see a company not just unthinkingly optimize a metric, but consider its impact."
+
+## 

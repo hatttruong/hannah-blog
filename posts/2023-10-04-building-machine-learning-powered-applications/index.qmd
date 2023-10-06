@@ -1,0 +1,69 @@
+---
+title: "Building machine learning powered applications"
+author: "Ha Truong"
+date: "2023-10-04"
+categories: [book]
+---
+
+
+My note when reading the book "Building Machine Learning Powered Applications
+Emmanuel Ameisen"
+
+## Resource:
+- source code of book: https://github.com/hundredblocks/ml-powered-applications
+
+
+## Chapter 1. From Product Goal to ML Framing
+
+"build systems for which we are unable to define a **heuristic** solution."
+
+"a manageable set of deterministic rules"
+
+### Estimate what is possible
+Following the two successive steps: 
+- (1) framing product goal in an ML paradigm
+- (2) evaluate ML feasibility => start with one that we judge as the simplest
+
+Categorize ML problems into 4 types: 
+- (1) classification and regression
+- (2) knowledge extraction: extract topic from text (NLP), object detection (image)
+- (3) catalog organizaation: recommendation using collaborative or content-based (such as what people also watched/buyed/ etc.)
+- (4) generative models: generate data & depend on user input such as translation, subtitle generation, summarize
+
+Data
+Data availability: labeled, weakly labeled, unlabeled
+
+### Framing ML Editor
+- (1) design end-to-end framework
+- (2) apply heuristic approach => the simplest approach => complex model
+- (3) 
+
+Note from "Monica Rogati interview": spend time (hours) to review data, result of models to check if there is something weird in it
+
+## Chapter 2
+It's time to choose success metric and planing model iterations
+
+### Metric
+  """a misalignment between product metrics and model metrics."""
+  
+There are 4 metrics to consider
+- (1) biz metric: represent the goal of project
+- (2) model metric: evaluate when it has not deployed yet => offline metric: AUC, precision, recall, 
+- (3) freshness and distribution shift: distribution of data shift => update model => decide how often we need to retrain model
+- (4) speed: depend on usecase
+
+### Estimate scope & challenge
+- Learn from domain expertise: see how they do tasks manually => find usefull features; avoid the pitfall; avoid reinventing the wheel
+- Look at the data before starting modeling: EDA => give an intuition
+- Find a similar, existing solution(s)
+  - Open Data: some resources to find the similar dataset
+    - Internet archive: https://archive.org/details/datasets
+    - subreddit: http://reddit.com/r/datasets
+    - [Kaggle](https://www.kaggle.com/datasets)
+    - [UCI](https://archive.ics.uci.edu/datasets)
+    - https://datasetsearch.research.google.com/
+    - Common Crawl: https://commoncrawl.org/
+    - Wiki: https://en.wikipedia.org/wiki/List_of_datasets_for_machine-learning_research
+  - Open Source Code:
+    
+### ML Editor Planning

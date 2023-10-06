@@ -1,0 +1,15 @@
+---
+title: "Receipt Project"
+author: "Ha Truong"
+date: "2023-10-05"
+categories: [project]
+---
+
+
+## Dataset
+- https://github.com/clovaai/cord (data + source code): thousands of Indonesian receipts
+- https://expressexpense.com/blog/free-receipt-images-ocr-machine-learning-dataset/: free 100, no-free 40K
+
+## Paper
+- https://hal.science/hal-01654191/document: Deep Learning for automatic sale receipt understanding
+- 
