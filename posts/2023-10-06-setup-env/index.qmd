@@ -58,6 +58,8 @@ A guidline for myself to setup env for ML
   jupyter contrib nbextension install --user
   
   ```
+  Some useful extensions: Codefolding, Collapse Heading, Table of Content
 - auto-format code: step (1) ```pip install autopep8```, step (2) enable autopep8 in nbextensions
+- to view document of func in jupyter notebook, we install ```pip install nbdev```
 
 
