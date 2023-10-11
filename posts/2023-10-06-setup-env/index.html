@@ -168,7 +168,6 @@ Python 3.10.12
 python: aliased to python3
 </code></pre></li>
 <li><p>I use python3.10 because this is version that Google Colab using</p></li>
-<li><p>create virtual env</p></li>
 </ul>
 </section>
 <section id="fastai" class="level2">
@@ -181,9 +180,40 @@ python: aliased to python3
 <section id="quarto-blogging" class="level2">
 <h2 class="anchored" data-anchor-id="quarto-blogging">Quarto: blogging</h2>
 <ul>
-<li>install: https://quarto.org/docs/get-started/</li>
-<li>failed to preview + render with vscode so I try with terminal and it works!</li>
-<li>it automatically update when I change file</li>
+<li><p>install: https://quarto.org/docs/get-started/</p></li>
+<li><p>failed to preview + render with vscode so I try with terminal and it works!</p></li>
+<li><p>it automatically update when I change file</p></li>
+<li><p>how to publish blog to github: https://quarto.org/docs/publishing/github-pages.html</p>
+<pre><code># create a branch for publishing
+git checkout --orphan gh-pages
+git reset --hard # make sure you've committed changes before running this!
+git commit --allow-empty -m "Initialising gh-pages branch"
+git push origin gh-pages
+
+# update gitignore
+/.quarto/
+/_site/
+
+# publishing
+quarto publish gh-pages</code></pre></li>
+</ul>
+</section>
+<section id="jupyter-notebook" class="level2">
+<h2 class="anchored" data-anchor-id="jupyter-notebook">Jupyter notebook</h2>
+<ul>
+<li><p>it is automatically installed by mamba but there is an incompatible between jupyter notebook and extension (at day of 2023.10.06, version of notebook is 7.x.x which is not work with extension =&gt; we need to downgrade)</p>
+<pre><code>pip install --upgrade notebook==6.4.12
+// reinstall traitlets
+pip uninstall traitlets
+pip install traitlets==5.9.0</code></pre></li>
+<li><p>install <strong>jupyter_contrib_nbextensions</strong></p>
+<pre><code>pip install jupyter_contrib_nbextensions
+jupyter contrib nbextension install --user
+</code></pre>
+<p>Some useful extensions: Codefolding, Collapse Heading, Table of Content</p></li>
+<li><p>auto-format code: step (1) <code>pip install autopep8</code>, step (2) enable autopep8 in nbextensions</p></li>
+<li><p>to view document of func in jupyter notebook, we install <code>pip install nbdev</code></p></li>
+<li><p>Convert notebook to python script, we use <code>nbdev.export.nb_export</code> Please refer to this file for example: <code>https://huggingface.co/spaces/hatruong/minima/blob/main/app.ipynb</code></p></li>
 </ul>
 
 
