@@ -28,6 +28,13 @@
     "text": "Paper\n\nhttps://hal.science/hal-01654191/document: Deep Learning for automatic sale receipt understanding"
   },
   {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "Blogging what I’ve learned about ML, DL, etc. Welcome!"
+  },
+  {
     "objectID": "posts/2023-10-06-setup-env/index.html",
     "href": "posts/2023-10-06-setup-env/index.html",
     "title": "Setup ENV",
@@ -119,17 +126,31 @@
     "text": "Chapter 2\nIt’s time to choose success metric and planing model iterations\n\nMetric\n“““a misalignment between product metrics and model metrics.”“”\nThere are 4 metrics to consider - (1) biz metric: represent the goal of project - (2) model metric: evaluate when it has not deployed yet =&gt; offline metric: AUC, precision, recall, - (3) freshness and distribution shift: distribution of data shift =&gt; update model =&gt; decide how often we need to retrain model - (4) speed: depend on usecase\n\n\nEstimate scope & challenge\n\nLearn from domain expertise: see how they do tasks manually =&gt; find usefull features; avoid the pitfall; avoid reinventing the wheel\nLook at the data before starting modeling: EDA =&gt; give an intuition\nFind a similar, existing solution(s)\n\nOpen Data: some resources to find the similar dataset\n\nInternet archive: https://archive.org/details/datasets\nsubreddit: http://reddit.com/r/datasets\nKaggle\nUCI\nhttps://datasetsearch.research.google.com/\nCommon Crawl: https://commoncrawl.org/\nWiki: https://en.wikipedia.org/wiki/List_of_datasets_for_machine-learning_research\n\nOpen Source Code:\n\n\n\n\nML Editor Planning"
   },
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
+    "objectID": "posts/2023-10-16-gradient-boosting/index.html",
+    "href": "posts/2023-10-16-gradient-boosting/index.html",
+    "title": "Setup ENV",
     "section": "",
-    "text": "Blogging what I’ve learned about ML, DL, etc. Welcome!"
+    "text": "additive modeling?\nmain difference between additive modeling vs boosting modeling\nwhat is gradient boosting"
+  },
+  {
+    "objectID": "posts/2023-10-16-gradient-boosting/index.html#part-1-gradient-boosting-distance-to-target",
+    "href": "posts/2023-10-16-gradient-boosting/index.html#part-1-gradient-boosting-distance-to-target",
+    "title": "Setup ENV",
+    "section": "",
+    "text": "additive modeling?\nmain difference between additive modeling vs boosting modeling\nwhat is gradient boosting"
+  },
+  {
+    "objectID": "posts/2023-10-20-panda-iloc-loc/index.html",
+    "href": "posts/2023-10-20-panda-iloc-loc/index.html",
+    "title": "loc vs iloc in Panda",
+    "section": "",
+    "text": "Diferrent between loc vs iloc in Panda"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Hannah Blog",
     "section": "",
-    "text": "Setup ENV\n\n\n\n\n\n\n\ncode\n\n\n\n\n\n\n\n\n\n\n\nOct 6, 2023\n\n\nHa Truong\n\n\n\n\n\n\n  \n\n\n\n\nReceipt Project\n\n\n\n\n\n\n\nproject\n\n\n\n\n\n\n\n\n\n\n\nOct 5, 2023\n\n\nHa Truong\n\n\n\n\n\n\n  \n\n\n\n\nBuilding machine learning powered applications\n\n\n\n\n\n\n\nbook\n\n\n\n\n\n\n\n\n\n\n\nOct 4, 2023\n\n\nHa Truong\n\n\n\n\n\n\n  \n\n\n\n\nNote of Fast.ai Course\n\n\n\n\n\n\n\ncode\n\n\n\n\n\n\n\n\n\n\n\nOct 3, 2023\n\n\nHa Truong\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nOct 1, 2023\n\n\nHa Truong\n\n\n\n\n\n\nNo matching items"
+    "text": "loc vs iloc in Panda\n\n\n\n\n\n\n\ncode\n\n\n\n\n\n\n\n\n\n\n\nOct 20, 2023\n\n\nHa Truong\n\n\n\n\n\n\n  \n\n\n\n\nSetup ENV\n\n\n\n\n\n\n\ncode\n\n\n\n\n\n\n\n\n\n\n\nOct 16, 2023\n\n\nHa Truong\n\n\n\n\n\n\n  \n\n\n\n\nSetup ENV\n\n\n\n\n\n\n\ncode\n\n\n\n\n\n\n\n\n\n\n\nOct 6, 2023\n\n\nHa Truong\n\n\n\n\n\n\n  \n\n\n\n\nReceipt Project\n\n\n\n\n\n\n\nproject\n\n\n\n\n\n\n\n\n\n\n\nOct 5, 2023\n\n\nHa Truong\n\n\n\n\n\n\n  \n\n\n\n\nBuilding machine learning powered applications\n\n\n\n\n\n\n\nbook\n\n\n\n\n\n\n\n\n\n\n\nOct 4, 2023\n\n\nHa Truong\n\n\n\n\n\n\n  \n\n\n\n\nNote of Fast.ai Course\n\n\n\n\n\n\n\ncode\n\n\n\n\n\n\n\n\n\n\n\nOct 3, 2023\n\n\nHa Truong\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nOct 1, 2023\n\n\nHa Truong\n\n\n\n\n\n\nNo matching items"
   }
 ]

@@ -2,30 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://hatttruong.github.io/hannah-blog/about.html</loc>
-    <lastmod>2023-10-11T02:15:31.928Z</lastmod>
+    <lastmod>2023-10-23T04:35:38.228Z</lastmod>
   </url>
   <url>
     <loc>https://hatttruong.github.io/hannah-blog/posts/2023-10-05-receipt-project/index.html</loc>
-    <lastmod>2023-10-11T02:15:30.955Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hatttruong.github.io/hannah-blog/posts/2023-10-06-setup-env/index.html</loc>
-    <lastmod>2023-10-11T02:15:30.288Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hatttruong.github.io/hannah-blog/posts/2023-10-03-fastai-notes/index.html</loc>
-    <lastmod>2023-10-11T02:15:29.437Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hatttruong.github.io/hannah-blog/posts/2023-10-04-building-machine-learning-powered-applications/index.html</loc>
-    <lastmod>2023-10-11T02:15:29.893Z</lastmod>
+    <lastmod>2023-10-23T04:35:37.126Z</lastmod>
   </url>
   <url>
     <loc>https://hatttruong.github.io/hannah-blog/posts/welcome/index.html</loc>
-    <lastmod>2023-10-11T02:15:30.616Z</lastmod>
+    <lastmod>2023-10-23T04:35:36.482Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hatttruong.github.io/hannah-blog/posts/2023-10-06-setup-env/index.html</loc>
+    <lastmod>2023-10-23T04:35:35.804Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hatttruong.github.io/hannah-blog/posts/2023-10-03-fastai-notes/index.html</loc>
+    <lastmod>2023-10-23T04:35:34.923Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hatttruong.github.io/hannah-blog/posts/2023-10-04-building-machine-learning-powered-applications/index.html</loc>
+    <lastmod>2023-10-23T04:35:35.377Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hatttruong.github.io/hannah-blog/posts/2023-10-16-gradient-boosting/index.html</loc>
+    <lastmod>2023-10-23T04:35:36.161Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hatttruong.github.io/hannah-blog/posts/2023-10-20-panda-iloc-loc/index.html</loc>
+    <lastmod>2023-10-23T04:35:36.798Z</lastmod>
   </url>
   <url>
     <loc>https://hatttruong.github.io/hannah-blog/index.html</loc>
-    <lastmod>2023-10-11T02:15:31.612Z</lastmod>
+    <lastmod>2023-10-23T04:35:37.911Z</lastmod>
   </url>
 </urlset>
