@@ -1,0 +1,54 @@
+---
+title: "loc vs iloc in Panda"
+author: "Ha Truong"
+date: "2023-10-20"
+date-modified: "2023-10-16"
+categories: [code]
+---
+
+# Diferrent between loc vs iloc in Panda
+
+We often use `loc` and `iloc` to select a subset rows or cells in DataFrame Pandas. Here is the summary of how to use these function:
+
+## Using iloc
+In general, `iloc` is used to filter dataframe based on **index** of row and column as below:
+  ```
+  df.iloc[<row_index>, <column_index>]
+  ```
+in which `<row_index>`, `<column_index>` can be a single number, a list of numner or a slice `x:y`. 
+
+Noted that:
+  - we cannot select based on column name when using `iloc`.
+  - we can mix type of `row_index` and `column_index` (they do not need to be the same type)
+  - when `row_index` or `column_index` is a single number, put it in a list in order to return a DataFrame; otherwise, it will return a Series
+
+Example:
+  ```
+  #
+  # select a single row
+  df.iloc[1] # return a Series
+  df.iloc[[1]] # return a df
+  # 
+  # select a subset continuous row with all columns
+  df.iloc[1:3,]
+  #
+  # select a subset continuous row with a subset columns
+  df.iloc[1:3, 2:]
+  #
+  # select a subset continuous row with one column
+  df.iloc[1:3, [2]]   # return df
+  df.iloc[1:3, 2]     # return Series
+  # 
+  # select a subset not continuous row
+  df.iloc[[0,2,3]] 
+  # select a subset not continuous row & not continuous columns
+  df.iloc[[0,2,3], [0, 2]] 
+  #
+  ```
+
+## Using loc
+
+
+
+## Example in notebook
+- https://github.com/hatttruong/machine-learning-from-scratch/blob/c8fa48bf0807b2540eb7d81e779d54885c83d1f8/pandas.ipynb

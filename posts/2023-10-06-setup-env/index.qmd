@@ -42,6 +42,21 @@ A guidline for myself to setup env for ML
 - install: https://quarto.org/docs/get-started/
 - failed to preview + render with vscode so I try with terminal and it works!
 - it automatically update when I change file
+- how to publish blog to github: https://quarto.org/docs/publishing/github-pages.html
+  ```
+  # create a branch for publishing
+  git checkout --orphan gh-pages
+  git reset --hard # make sure you've committed changes before running this!
+  git commit --allow-empty -m "Initialising gh-pages branch"
+  git push origin gh-pages
+
+  # update gitignore
+  /.quarto/
+  /_site/
+
+  # publishing
+  quarto publish gh-pages
+  ```
 
 ## Jupyter notebook
 
@@ -61,5 +76,7 @@ A guidline for myself to setup env for ML
   Some useful extensions: Codefolding, Collapse Heading, Table of Content
 - auto-format code: step (1) ```pip install autopep8```, step (2) enable autopep8 in nbextensions
 - to view document of func in jupyter notebook, we install ```pip install nbdev```
+- Convert notebook to python script, we use `nbdev.export.nb_export` Please refer to this file for example: `https://huggingface.co/spaces/hatruong/minima/blob/main/app.ipynb`
+
 
 

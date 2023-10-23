@@ -1,0 +1,29 @@
+---
+title: "Learning how the gradient boosting work"
+author: "Ha Truong"
+date: "2023-10-16"
+date-modified: "2023-10-23"
+categories: [code]
+---
+
+# Learning how the gradient boosting work?
+
+## Part 1: Gradient boosting: Distance to target
+
+- additive modeling?
+
+- main difference between additive modeling vs boosting modeling
+- what is gradient boosting
+
+
+## Part 2: TODO
+
+## Part 3: Descent
+
+
+# Reference:
+- https://explained.ai/gradient-boosting/index.html
+- https://explained.ai/gradient-boosting/L2-loss.html
+- https://explained.ai/gradient-boosting/L1-loss.html
+- https://explained.ai/gradient-boosting/descent.html
+- https://explained.ai/gradient-boosting/faq.html
