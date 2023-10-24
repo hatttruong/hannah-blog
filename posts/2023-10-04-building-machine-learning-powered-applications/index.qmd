@@ -3,6 +3,7 @@ title: "Building machine learning powered applications"
 author: "Ha Truong"
 date: "2023-10-04"
 categories: [book]
+draft: true
 ---
 
 

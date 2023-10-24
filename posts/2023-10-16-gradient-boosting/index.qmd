@@ -1,14 +1,14 @@
 ---
-title: "Learning how the gradient boosting work"
+title: "How the gradient boosting work"
 author: "Ha Truong"
 date: "2023-10-16"
 date-modified: "2023-10-23"
 categories: [code]
+draft: true
 ---
 
-# Learning how the gradient boosting work?
 
-## Part 1: Gradient boosting: Distance to target
+# Part 1: Gradient boosting: Distance to target
 
 - additive modeling?
 
@@ -16,9 +16,9 @@ categories: [code]
 - what is gradient boosting
 
 
-## Part 2: TODO
+# Part 2: TODO
 
-## Part 3: Descent
+# Part 3: Descent
 
 
 # Reference:
