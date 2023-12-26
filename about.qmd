@@ -16,4 +16,4 @@ about:
 
 ---
 
-Blogging what I've learned about ML, DL, etc.
+My ambition is ultimately to explain every complex thing in AI to a baby.

@@ -5,6 +5,6 @@ date: "2023-10-01"
 categories: [news]
 ---
 
-Blogging what I've learned about ML, DL, etc. Welcome!
+Blogging what I've learned about ML, DL, etc.
 
 ![](thumbnail.jpg)

@@ -27,8 +27,18 @@ A guidline for myself to setup env for ML
   python: aliased to python3
   
   ```
-- I use python3.10 because this is version that Google Colab using
+  Note: I use python3.10 because this is version that Google Colab using
 
+- Virtual Env:
+  ```
+  mamba create -n <nameofmyenv>
+  mamba activate <nameofmyenv>
+  ```
+
+- Install packages from files:
+  ```
+  mamba install --file <path_of_requirements>
+  ```
 
 ## Fastai
 
@@ -79,4 +89,18 @@ A guidline for myself to setup env for ML
 - Convert notebook to python script, we use `nbdev.export.nb_export` Please refer to this file for example: `https://huggingface.co/spaces/hatruong/minima/blob/main/app.ipynb`
 
 
-
+## Setup Deeplearning
+- CUDA:
+  ```
+  # check if cuda is really installed or not
+  nvcc --version
+  #
+  # install
+  sudo apt install nvidia-cuda-toolkit
+  ```
+- Some common packages
+  ```
+  diffusers
+  transformers
+  huggingface-hub
+  ```

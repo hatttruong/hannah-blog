@@ -22,8 +22,5 @@ draft: true
 
 
 # Reference:
-- https://explained.ai/gradient-boosting/index.html
-- https://explained.ai/gradient-boosting/L2-loss.html
-- https://explained.ai/gradient-boosting/L1-loss.html
-- https://explained.ai/gradient-boosting/descent.html
-- https://explained.ai/gradient-boosting/faq.html
+- [Blog explained ai](https://explained.ai/gradient-boosting/index.html)
+- [paper `A gradient boosting machine`](https://jerryfriedman.su.domains/ftp/trebst.pdf)

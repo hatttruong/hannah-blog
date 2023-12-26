@@ -1,0 +1,23 @@
+---
+title: "AB Testing"
+author: "Ha Truong"
+date: "2023-11-15"
+date-modified: ""
+categories: [basic]
+draft: true
+---
+
+# AB Testing
+
+
+## What is p-value
+
+p-value is the exact probability that the outcome of AB test result happens by chance
+- if p-value is low (<1%) than we can tell that version B is indeed better than version B
+- if p-value is high (> 10%) then our result could have happened randomly
+
+## References
+- https://data36.com/statistical-significance-in-ab-testing/
+- https://thomasleeper.com/Rcourse/Tutorials/permutationtests.html
+- https://www.jwilber.me/permutationtest/
+- https://www.amazon.com/Practical-Statistics-Data-Scientists-Essential/dp/1491952962
