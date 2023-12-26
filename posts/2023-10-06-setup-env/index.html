@@ -166,8 +166,13 @@ Python 3.10.12
 (base) 192 :: ~ » alias python=python3
 (base) 192 :: ~ » which python
 python: aliased to python3
-</code></pre></li>
-<li><p>I use python3.10 because this is version that Google Colab using</p></li>
+</code></pre>
+<p>Note: I use python3.10 because this is version that Google Colab using</p></li>
+<li><p>Virtual Env:</p>
+<pre><code>mamba create -n &lt;nameofmyenv&gt;
+mamba activate &lt;nameofmyenv&gt;</code></pre></li>
+<li><p>Install packages from files:</p>
+<pre><code>mamba install --file &lt;path_of_requirements&gt;</code></pre></li>
 </ul>
 </section>
 <section id="fastai" class="level2">
@@ -214,6 +219,21 @@ jupyter contrib nbextension install --user
 <li><p>auto-format code: step (1) <code>pip install autopep8</code>, step (2) enable autopep8 in nbextensions</p></li>
 <li><p>to view document of func in jupyter notebook, we install <code>pip install nbdev</code></p></li>
 <li><p>Convert notebook to python script, we use <code>nbdev.export.nb_export</code> Please refer to this file for example: <code>https://huggingface.co/spaces/hatruong/minima/blob/main/app.ipynb</code></p></li>
+</ul>
+</section>
+<section id="setup-deeplearning" class="level2">
+<h2 class="anchored" data-anchor-id="setup-deeplearning">Setup Deeplearning</h2>
+<ul>
+<li><p>CUDA:</p>
+<pre><code># check if cuda is really installed or not
+nvcc --version
+#
+# install
+sudo apt install nvidia-cuda-toolkit</code></pre></li>
+<li><p>Some common packages</p>
+<pre><code>diffusers
+transformers
+huggingface-hub</code></pre></li>
 </ul>
 
 

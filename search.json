@@ -4,49 +4,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Blogging what I’ve learned about ML, DL, etc."
-  },
-  {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
-    "section": "",
-    "text": "Blogging what I’ve learned about ML, DL, etc. Welcome!"
-  },
-  {
-    "objectID": "posts/2023-10-06-setup-env/index.html",
-    "href": "posts/2023-10-06-setup-env/index.html",
-    "title": "Setup ENV",
-    "section": "",
-    "text": "A guidline for myself to setup env for ML\nNote: NEVER use python of system =&gt; use CONDA or MAMBA to manage python version\n\n\n\nCurrently, Mamba is faster than Miniconda, I follow the instruction here to install: https://github.com/conda-forge/miniforge#mambaforge\n\n# MACOS \n(base) 192 :: ~ » curl -L -O \"https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh\" bash Miniforge3-$(uname)-$(uname -m).sh\n(base) 192 :: ~ » which python3                                                                                                                                                                         1 ↵\n/Users/hatruong/miniforge3/bin/python3\n(base) 192 :: ~ » python3 --version\nPython 3.10.12\n\n(base) 192 :: ~ » alias python=python3\n(base) 192 :: ~ » which python\npython: aliased to python3\n\nI use python3.10 because this is version that Google Colab using\n\n\n\n\n\ninstall fastai using mamba\nmamba install -Uqq fastai\n\n\n\n\n\ninstall: https://quarto.org/docs/get-started/\nfailed to preview + render with vscode so I try with terminal and it works!\nit automatically update when I change file\nhow to publish blog to github: https://quarto.org/docs/publishing/github-pages.html\n# create a branch for publishing\ngit checkout --orphan gh-pages\ngit reset --hard # make sure you've committed changes before running this!\ngit commit --allow-empty -m \"Initialising gh-pages branch\"\ngit push origin gh-pages\n\n# update gitignore\n/.quarto/\n/_site/\n\n# publishing\nquarto publish gh-pages\n\n\n\n\n\nit is automatically installed by mamba but there is an incompatible between jupyter notebook and extension (at day of 2023.10.06, version of notebook is 7.x.x which is not work with extension =&gt; we need to downgrade)\npip install --upgrade notebook==6.4.12\n// reinstall traitlets\npip uninstall traitlets\npip install traitlets==5.9.0\ninstall jupyter_contrib_nbextensions\npip install jupyter_contrib_nbextensions\njupyter contrib nbextension install --user\n\nSome useful extensions: Codefolding, Collapse Heading, Table of Content\nauto-format code: step (1) pip install autopep8, step (2) enable autopep8 in nbextensions\nto view document of func in jupyter notebook, we install pip install nbdev\nConvert notebook to python script, we use nbdev.export.nb_export Please refer to this file for example: https://huggingface.co/spaces/hatruong/minima/blob/main/app.ipynb"
-  },
-  {
-    "objectID": "posts/2023-10-06-setup-env/index.html#mamba-manage-python-package",
-    "href": "posts/2023-10-06-setup-env/index.html#mamba-manage-python-package",
-    "title": "Setup ENV",
-    "section": "",
-    "text": "Currently, Mamba is faster than Miniconda, I follow the instruction here to install: https://github.com/conda-forge/miniforge#mambaforge\n\n# MACOS \n(base) 192 :: ~ » curl -L -O \"https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh\" bash Miniforge3-$(uname)-$(uname -m).sh\n(base) 192 :: ~ » which python3                                                                                                                                                                         1 ↵\n/Users/hatruong/miniforge3/bin/python3\n(base) 192 :: ~ » python3 --version\nPython 3.10.12\n\n(base) 192 :: ~ » alias python=python3\n(base) 192 :: ~ » which python\npython: aliased to python3\n\nI use python3.10 because this is version that Google Colab using"
-  },
-  {
-    "objectID": "posts/2023-10-06-setup-env/index.html#fastai",
-    "href": "posts/2023-10-06-setup-env/index.html#fastai",
-    "title": "Setup ENV",
-    "section": "",
-    "text": "install fastai using mamba\nmamba install -Uqq fastai"
-  },
-  {
-    "objectID": "posts/2023-10-06-setup-env/index.html#quarto-blogging",
-    "href": "posts/2023-10-06-setup-env/index.html#quarto-blogging",
-    "title": "Setup ENV",
-    "section": "",
-    "text": "install: https://quarto.org/docs/get-started/\nfailed to preview + render with vscode so I try with terminal and it works!\nit automatically update when I change file\nhow to publish blog to github: https://quarto.org/docs/publishing/github-pages.html\n# create a branch for publishing\ngit checkout --orphan gh-pages\ngit reset --hard # make sure you've committed changes before running this!\ngit commit --allow-empty -m \"Initialising gh-pages branch\"\ngit push origin gh-pages\n\n# update gitignore\n/.quarto/\n/_site/\n\n# publishing\nquarto publish gh-pages"
-  },
-  {
-    "objectID": "posts/2023-10-06-setup-env/index.html#jupyter-notebook",
-    "href": "posts/2023-10-06-setup-env/index.html#jupyter-notebook",
-    "title": "Setup ENV",
-    "section": "",
-    "text": "it is automatically installed by mamba but there is an incompatible between jupyter notebook and extension (at day of 2023.10.06, version of notebook is 7.x.x which is not work with extension =&gt; we need to downgrade)\npip install --upgrade notebook==6.4.12\n// reinstall traitlets\npip uninstall traitlets\npip install traitlets==5.9.0\ninstall jupyter_contrib_nbextensions\npip install jupyter_contrib_nbextensions\njupyter contrib nbextension install --user\n\nSome useful extensions: Codefolding, Collapse Heading, Table of Content\nauto-format code: step (1) pip install autopep8, step (2) enable autopep8 in nbextensions\nto view document of func in jupyter notebook, we install pip install nbdev\nConvert notebook to python script, we use nbdev.export.nb_export Please refer to this file for example: https://huggingface.co/spaces/hatruong/minima/blob/main/app.ipynb"
+    "text": "My ambition is ultimately to explain every complex thing in AI to a baby."
   },
   {
     "objectID": "posts/2023-10-20-panda-iloc-loc/index.html",
@@ -75,6 +33,55 @@
     "title": "loc vs iloc in Panda",
     "section": "Resource",
     "text": "Resource\n\npandas.ipynb"
+  },
+  {
+    "objectID": "posts/2023-10-06-setup-env/index.html",
+    "href": "posts/2023-10-06-setup-env/index.html",
+    "title": "Setup ENV",
+    "section": "",
+    "text": "A guidline for myself to setup env for ML\nNote: NEVER use python of system =&gt; use CONDA or MAMBA to manage python version\n\n\n\nCurrently, Mamba is faster than Miniconda, I follow the instruction here to install: https://github.com/conda-forge/miniforge#mambaforge\n\n# MACOS \n(base) 192 :: ~ » curl -L -O \"https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh\" bash Miniforge3-$(uname)-$(uname -m).sh\n(base) 192 :: ~ » which python3                                                                                                                                                                         1 ↵\n/Users/hatruong/miniforge3/bin/python3\n(base) 192 :: ~ » python3 --version\nPython 3.10.12\n\n(base) 192 :: ~ » alias python=python3\n(base) 192 :: ~ » which python\npython: aliased to python3\n\nNote: I use python3.10 because this is version that Google Colab using\nVirtual Env:\nmamba create -n &lt;nameofmyenv&gt;\nmamba activate &lt;nameofmyenv&gt;\nInstall packages from files:\nmamba install --file &lt;path_of_requirements&gt;\n\n\n\n\n\ninstall fastai using mamba\nmamba install -Uqq fastai\n\n\n\n\n\ninstall: https://quarto.org/docs/get-started/\nfailed to preview + render with vscode so I try with terminal and it works!\nit automatically update when I change file\nhow to publish blog to github: https://quarto.org/docs/publishing/github-pages.html\n# create a branch for publishing\ngit checkout --orphan gh-pages\ngit reset --hard # make sure you've committed changes before running this!\ngit commit --allow-empty -m \"Initialising gh-pages branch\"\ngit push origin gh-pages\n\n# update gitignore\n/.quarto/\n/_site/\n\n# publishing\nquarto publish gh-pages\n\n\n\n\n\nit is automatically installed by mamba but there is an incompatible between jupyter notebook and extension (at day of 2023.10.06, version of notebook is 7.x.x which is not work with extension =&gt; we need to downgrade)\npip install --upgrade notebook==6.4.12\n// reinstall traitlets\npip uninstall traitlets\npip install traitlets==5.9.0\ninstall jupyter_contrib_nbextensions\npip install jupyter_contrib_nbextensions\njupyter contrib nbextension install --user\n\nSome useful extensions: Codefolding, Collapse Heading, Table of Content\nauto-format code: step (1) pip install autopep8, step (2) enable autopep8 in nbextensions\nto view document of func in jupyter notebook, we install pip install nbdev\nConvert notebook to python script, we use nbdev.export.nb_export Please refer to this file for example: https://huggingface.co/spaces/hatruong/minima/blob/main/app.ipynb\n\n\n\n\n\nCUDA:\n# check if cuda is really installed or not\nnvcc --version\n#\n# install\nsudo apt install nvidia-cuda-toolkit\nSome common packages\ndiffusers\ntransformers\nhuggingface-hub"
+  },
+  {
+    "objectID": "posts/2023-10-06-setup-env/index.html#mamba-manage-python-package",
+    "href": "posts/2023-10-06-setup-env/index.html#mamba-manage-python-package",
+    "title": "Setup ENV",
+    "section": "",
+    "text": "Currently, Mamba is faster than Miniconda, I follow the instruction here to install: https://github.com/conda-forge/miniforge#mambaforge\n\n# MACOS \n(base) 192 :: ~ » curl -L -O \"https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh\" bash Miniforge3-$(uname)-$(uname -m).sh\n(base) 192 :: ~ » which python3                                                                                                                                                                         1 ↵\n/Users/hatruong/miniforge3/bin/python3\n(base) 192 :: ~ » python3 --version\nPython 3.10.12\n\n(base) 192 :: ~ » alias python=python3\n(base) 192 :: ~ » which python\npython: aliased to python3\n\nNote: I use python3.10 because this is version that Google Colab using\nVirtual Env:\nmamba create -n &lt;nameofmyenv&gt;\nmamba activate &lt;nameofmyenv&gt;\nInstall packages from files:\nmamba install --file &lt;path_of_requirements&gt;"
+  },
+  {
+    "objectID": "posts/2023-10-06-setup-env/index.html#fastai",
+    "href": "posts/2023-10-06-setup-env/index.html#fastai",
+    "title": "Setup ENV",
+    "section": "",
+    "text": "install fastai using mamba\nmamba install -Uqq fastai"
+  },
+  {
+    "objectID": "posts/2023-10-06-setup-env/index.html#quarto-blogging",
+    "href": "posts/2023-10-06-setup-env/index.html#quarto-blogging",
+    "title": "Setup ENV",
+    "section": "",
+    "text": "install: https://quarto.org/docs/get-started/\nfailed to preview + render with vscode so I try with terminal and it works!\nit automatically update when I change file\nhow to publish blog to github: https://quarto.org/docs/publishing/github-pages.html\n# create a branch for publishing\ngit checkout --orphan gh-pages\ngit reset --hard # make sure you've committed changes before running this!\ngit commit --allow-empty -m \"Initialising gh-pages branch\"\ngit push origin gh-pages\n\n# update gitignore\n/.quarto/\n/_site/\n\n# publishing\nquarto publish gh-pages"
+  },
+  {
+    "objectID": "posts/2023-10-06-setup-env/index.html#jupyter-notebook",
+    "href": "posts/2023-10-06-setup-env/index.html#jupyter-notebook",
+    "title": "Setup ENV",
+    "section": "",
+    "text": "it is automatically installed by mamba but there is an incompatible between jupyter notebook and extension (at day of 2023.10.06, version of notebook is 7.x.x which is not work with extension =&gt; we need to downgrade)\npip install --upgrade notebook==6.4.12\n// reinstall traitlets\npip uninstall traitlets\npip install traitlets==5.9.0\ninstall jupyter_contrib_nbextensions\npip install jupyter_contrib_nbextensions\njupyter contrib nbextension install --user\n\nSome useful extensions: Codefolding, Collapse Heading, Table of Content\nauto-format code: step (1) pip install autopep8, step (2) enable autopep8 in nbextensions\nto view document of func in jupyter notebook, we install pip install nbdev\nConvert notebook to python script, we use nbdev.export.nb_export Please refer to this file for example: https://huggingface.co/spaces/hatruong/minima/blob/main/app.ipynb"
+  },
+  {
+    "objectID": "posts/2023-10-06-setup-env/index.html#setup-deeplearning",
+    "href": "posts/2023-10-06-setup-env/index.html#setup-deeplearning",
+    "title": "Setup ENV",
+    "section": "",
+    "text": "CUDA:\n# check if cuda is really installed or not\nnvcc --version\n#\n# install\nsudo apt install nvidia-cuda-toolkit\nSome common packages\ndiffusers\ntransformers\nhuggingface-hub"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "Blogging what I’ve learned about ML, DL, etc."
   },
   {
     "objectID": "index.html",
